@@ -1,0 +1,60 @@
+.tabs {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin: 1em 0 2em;
+	font-weight: 300;
+}
+
+.tabs nav {
+	text-align: center;
+}
+
+.tabs nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+	width: 100%;
+}
+
+.tabs nav ul li {
+	border: 1px solid #becbd2;
+	margin: 0 -1px;
+    display: block;
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+.tabs nav li.tab-current {
+	border: 1px solid #47a3da;
+	box-shadow: inset 0 2px #47a3da;
+	border-bottom: none;
+	z-index: 100;
+}
+.tabs nav a {
+	color: #becbd2;
+	display: block;
+	font-size: 1em;
+	line-height: 2.5;
+	padding: 0 1em;
+	white-space: nowrap;
+}
+.tabs nav li.tab-current a {
+	color: #47a3da;
+}
+
+.content section {
+	font-size: 1.25em;
+	padding: 3em 1em;
+	display: none;
+	margin: 0 auto;
+}
+.content section:after {
+	clear: both;
+}
+
+.content section.content-current {
+	display: block;
+}
